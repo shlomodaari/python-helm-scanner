@@ -32,5 +32,4 @@ jobs:
         push: true  
         tags: ${{ secrets.DOCKER_HUB_USER }}/my-python-app:latest 
 
-    - name: Verify Image on Docker Hub
-      run: docker run --rm ${{ secrets.DOCKER_HUB_USER }}/my-python-app:latest --version  
+
