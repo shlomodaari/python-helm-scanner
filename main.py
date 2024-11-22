@@ -173,7 +173,7 @@ def process_grype_output(output, image):
             continue
         
         parts = line.split()
-        print(f"Parts for debugging: {parts}")
+        # print(f"Parts for debugging: {parts}")
         if len(parts) >= 5:
             component_library = parts[0]  # The component/library 
             vulnerability = parts[4]  # The vulnerability ID
@@ -248,10 +248,10 @@ def clean_up():
 
 def main():
     # User input for the helm chart information 
-    repo_name = "ingress-nginx"  # input("Enter the Helm repository name (e.g., ingress-nginx): ").strip() 
-    repo_url = "https://kubernetes.github.io/ingress-nginx"  # input(f"Enter the URL for the {repo_name} repository (e.g., https://kubernetes.github.io/ingress-nginx): ").strip()
-    chart_name = "ingress-nginx"  # input("Enter the Helm chart name (e.g., ingress-nginx): ").strip()
-    chart_version = "4.11.3"  # input(f"Enter the version for the {chart_name} chart (e.g., 4.11.3): ").strip()
+    repo_name =  input("Enter the Helm repository name (e.g., ingress-nginx): ").strip() 
+    repo_url =  input(f"Enter the URL for the {repo_name} repository (e.g., https://kubernetes.github.io/ingress-nginx): ").strip()
+    chart_name = input("Enter the Helm chart name (e.g., ingress-nginx): ").strip()
+    chart_version =  input(f"Enter the version for the {chart_name} chart (e.g., 4.11.3): ").strip()
     file_path = subprocess.run(["pwd"], capture_output=True, text=True).stdout.strip()
     file_name = f"{repo_name}-{chart_version}"
     chart_dir = f"{repo_name}"
