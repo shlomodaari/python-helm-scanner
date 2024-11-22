@@ -30,6 +30,6 @@ jobs:
       with:
         context: .  
         push: true  
-        tags: ${{ secrets.DOCKER_HUB_USER }}/my-python-app:latest 
+        tags: ${{ secrets.DOCKER_HUB_USER }}/python-helm-scanner:latest 
 
 
