@@ -46,7 +46,7 @@ cd python-helm-scanner
 Execute the application by running the Python script:
 
 ```bash
-python helm_scanner.py
+python main.py
 ```
 
 The script will prompt you to enter the following inputs:
