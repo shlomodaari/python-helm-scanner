@@ -118,10 +118,6 @@ The images are scanned using Grype (or another scanner if specified) for known v
 
 Temporary files and directories are removed after the scan is complete.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Customization
 
 You can customize the application to work with different vulnerability scanners (e.g., Trivy). To do this, modify the `run_vulnerability_scan()` function to support additional scanners.
